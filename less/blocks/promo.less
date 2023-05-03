@@ -1,0 +1,113 @@
+.promo::after {
+    @media (min-width: @desktop-width) {
+        box-sizing: border-box;
+        content: "";
+       position: absolute;
+      top: -200px;
+        right: 0;
+        bottom: 0;
+        left: 50%;
+        z-index: -2;
+        background-color: #63a63b;
+        background-position: 0 100%;
+       background-repeat: no-repeat;
+       background-image: url("../img/background-de.jpg");    
+    }
+}
+
+.promo {
+    padding-top: 27px;
+    text-align: center;
+
+    @media (max-width: @mobile-width-only) {
+        color: #ffffff;
+        background-color: #63a63b;
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-image: url("../img/background-mo.jpg"), linear-gradient(#63a63b 0, #63a63b 302px, #ffffff 302px);
+    }
+    
+    @media (min-width: @tablet-width) {
+        background-color: transparent;
+        text-align: left;
+        color: #000000;
+    }
+
+    @media (min-width: @desktop-width) {
+        position: relative;
+        margin-bottom: 60px;
+    }
+}
+
+.promo__heading {
+    margin: 0;
+    margin-bottom: 25px;
+    font-family: Oswald, sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+
+
+    @media (min-width: @tablet-width) {
+        color: #000000;
+        font-size: 60px;
+        line-height: 60px;
+    }
+}
+
+.promo__text {
+    margin: 0;
+    margin-bottom: 29px;
+    font-family: Oswald, sans-serif;
+    line-height: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+        color: #000000;
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+.promo__container {
+    box-sizing: border-box;
+    
+    @media (min-width: @tablet-width) {
+        position: relative;
+        padding: 0 90px 526px;
+    }
+
+    @media (min-width: @desktop-width) {
+        min-height: 582px;
+        padding: 20px 610px 95px 80px;
+    }
+}
+
+.promo__image {
+    width: 280px;
+
+    @media (min-width: @tablet-width) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        width: 708px;
+        height: 609px;
+    }
+
+    @media (min-width: @desktop-width) {
+        top: 30px;
+        left: calc(50% - 162px);
+        width: 552px;
+        height: 499px;
+    }
+}
+
+.promo__button {
+    width: 100%;
+
+    @media (min-width: @tablet-width) {
+        width: auto;
+    }
+}

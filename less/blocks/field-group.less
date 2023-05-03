@@ -1,0 +1,118 @@
+.field-group {
+    padding: 0;
+    border: none;
+}
+
+.field-group__heading {
+    margin-bottom: 35px;
+    padding: 0;
+    display: flex;
+    float: left;
+    color: #000000;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 400;
+    text-transform: none;
+
+    @media (min-width: @tablet-width) {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    @media (min-width: @desktop-width) {
+        margin-bottom: 72px;
+    }
+}
+
+.field-group__heading::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 2px;
+    margin-top: 16px;
+    background-color: #68b738;
+}
+
+.field-group__list {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    list-style: none;
+}
+
+.field-group--target {
+    padding: 21px;
+
+    @media (min-width: @tablet-width) {
+        padding: 25px;
+    }
+}
+
+.field-group__heading span {
+    position: relative;
+    z-index: 1;
+    // width: -webkit-min-content;
+    // width: -moz-min-content;
+    width: min-content;
+    margin-left: -22px;
+    padding: 0 22px;
+    background-color: #ffffff;
+
+    @media (min-width: @tablet-width) {
+        width: auto;
+        margin-left: -42px;
+        padding: 0 42px;
+    }
+}
+
+.field-group__field {
+    clear: both;
+    width: 100%;
+}
+
+.field-group__item + .field-group__item {
+    margin-top: 14px;
+
+    @media (min-width: @tablet-width) {
+        margin-top: 20px;
+    }
+}
+// .field {
+//     position: relative;
+//     display: grid;
+//     grid-template-columns: max-content 1fr;
+//     align-items: center;
+//     gap: 14px;
+// }
+
+.field-group__list--additional {
+    @media (min-width: @tablet-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 80px;
+        row-gap: 32px;
+    }
+
+    @media (min-width: @desktop-width) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.field-group__list--additional .field-group__item + .field-group__item {
+    margin-top: 0;
+}
+
+.field-group__list--contacts {
+    @media (min-width: @desktop-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 80px;
+    }
+}
+
+.field-group__list--contacts .field-group__item + .field-group__item {
+    @media (min-width: @desktop-width) {
+        margin-top: 0;
+    }
+}
